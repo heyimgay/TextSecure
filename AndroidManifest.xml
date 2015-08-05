@@ -240,6 +240,7 @@
 
     <activity android:name=".LogSubmitActivity"
               android:label="@string/AndroidManifest__log_submit"
+              android:theme="@style/TextSecure.LightTheme"
               android:windowSoftInputMode="stateHidden"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
