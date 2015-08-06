@@ -6,7 +6,7 @@
                                            android:layout_marginLeft="16dp"
                                            android:layout_marginRight="16dp">
 
-    <TextView android:id="@+id/name"
+    <org.thoughtcrime.securesms.components.emoji.EmojiTTextView android:id="@+id/name"
               android:textAppearance="?android:attr/textAppearanceMedium"
               android:textColor="?attr/conversation_list_item_contact_color"
               android:singleLine="true"
