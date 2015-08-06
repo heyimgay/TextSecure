@@ -17,7 +17,7 @@
             android:scaleType="centerCrop"
             android:contentDescription="@string/SingleContactSelectionActivity_contact_photo" />
 
-    <TextView android:id="@+id/name"
+    <org.thoughtcrime.securesms.components.emoji.EmojiTTextView android:id="@+id/name"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:layout_alignParentTop="true"
