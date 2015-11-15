@@ -24,14 +24,14 @@ import java.lang.ref.WeakReference;
 import java.text.SimpleDateFormat;
 
 public class SaveAttachmentTask extends ProgressDialogAsyncTask<SaveAttachmentTask.Attachment, Void, Integer> {
-  private static final String TAG = SaveAttachmentTask.class.getSimpleName();
+  private static final String TAG = SaveAttachmentTask.class.getSimpleName(); 
 
   private static final int SUCCESS              = 0;
   private static final int FAILURE              = 1;
   private static final int WRITE_ACCESS_FAILURE = 2;
 
   private final WeakReference<Context> contextReference;
-  private final WeakReference<MasterSecret> masterSecretReference;
+  private final WeakReference<Ma/sterSecret> masterSecretReference;
 
   public SaveAttachmentTask(Context context, MasterSecret masterSecret) {
     super(context, R.string.ConversationFragment_saving_attachment, R.string.ConversationFragment_saving_attachment_to_sd_card);
@@ -119,7 +119,7 @@ public class SaveAttachmentTask extends ProgressDialogAsyncTask<SaveAttachmentTa
     MimeTypeMap       mimeTypeMap   = MimeTypeMap.getSingleton();
     String            extension     = mimeTypeMap.getExtensionFromMimeType(contentType);
     SimpleDateFormat  dateFormatter = new SimpleDateFormat("yyyy-MM-dd-HHmmss");
-    String            base          = "textsecure-" + dateFormatter.format(timestamp);
+    String            base          = "signal-" + dateFormatter.format(timestamp);
 
     if (extension == null)
       extension = "attach";
